@@ -98,8 +98,8 @@ settings = {
     "pnharfbot": {},
     "pname": {},
     "pro_name": {},
-    "message1":"Thank กิ้ววว😝😝",
-    "message":"บัญชีนี้ถูกป้องกันโดย แมวเป้ไร้สังกัด  ระบบได้ทำการบล็อคคุณอัตโนมัติ!..",
+    "message1":"Thank you😝😝",
+    "message":"บัญชีนี้ถูกป้องกันระบบได้ทำการบล็อคคุณอัตโนมัติ!..",
     "comment":"""""",
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
@@ -344,7 +344,7 @@ def mentionMembers(to, mid):
 
 def myhelp():
     myHelp = """╔══════════════┓
-╠   🔱แมวเป้ Bot Self🔱
+╠   Bot Self
 ╚══════════════┛
 🚨คำสั่ง1= คำสั่งทั่วไป
 🚨คำสั่ง2 = คำสั่งกลุ่ม
@@ -352,7 +352,7 @@ def myhelp():
 🚨คำสั่ง4 = คำสั่งมีเดีย
 💎คำสั่ง5 = คำสั่งสิริ
 💎คำสั่ง6 = คำสั่งแปลภาษา
-🔱 🔱แมวเป้ Bot Self🔱🔱"""
+🔱 🔱Bot Self🔱🔱"""
     return myHelp
 
 def listgrup():
@@ -389,7 +389,7 @@ def listgrup():
 ╠►ล้างแบน @
 ╠►เตะแบน
 ╠►เช็คไอดี
-╰═🔱By.แมวเป้Bot Self🔱"""
+╰═🔱Bot Self🔱"""
     return listGrup
 
 def socmedia():
@@ -413,12 +413,12 @@ def socmedia():
 ╠►ขอหื่น
 ╠►พูด 
 ╠►ประกาศ: ➠ ส่งทุกห้องแชท
-╰═🔱By.แมวเป้Bot Self🔱"""
+╰═🔱Bot Self🔱"""
     return socMedia
 
 def helpset():
     helpSet = """╔══════════════┓
-╠    🔱คำสั่ง  แมวเป้ Bot Self🔱
+╠    🔱คำสั่ง Bot Self🔱
 ╚══════════════┛
 ╔══════════════┓
 ╠►Me ➠ คอนแทคเรา
@@ -466,7 +466,7 @@ def helpset():
 ╠►ชื่อ: ➠ เปลี่ยนชื่อ
 ╠►ตัส: ➠ เปลี่ยนสเตตัส
 ╠►Spam on ➠ off
-╰═🔱By.แมวเป้ Bot Self🔱"""
+╰═🔱Bot Self🔱"""
     return helpSet
 
 def helpsetting():
@@ -503,7 +503,7 @@ def helpsetting():
 ╠►กันกลุ่ม ➠ ปิดกันกลุ่ม
 ╠►กันเข้า ➠ ปิดกันเข้า
 ╠►เปิดหมด ➠ ปิดหมด
-╰══🔱By.แมวเป้ Bot Self🔱"""
+╰══🔱Bot Self🔱"""
     return helpSetting
 
 def helptexttospeech():
@@ -533,7 +533,7 @@ def helptexttospeech():
 ╠► sr : เซอเบียร์
 ╠► th : ไทย
 ╠► vi : เวียดนาม
-╰═🔱By.แมวไร้สังกัด🔱»
+╰═🔱Bot self🔱»
 
 「วิธีใช้ : พูด ตามด้วยข้อความ"""
     return helpTextToSpeech
@@ -574,7 +574,7 @@ def helplanguange():
 ╠► ru : รัสเซีย
 ╠► th : ไทย
 ╠► zu : ซูลู
-╰═🔱By.แมวเป้ Bot Self🔱»
+╰═🔱Bot Self🔱»
  
 📖วิธีใช้ : Tr-th ตามด้วยคำที่จะแปล📖"""
     return helpLanguange
@@ -721,12 +721,12 @@ def lineBot(op):
 #==============================================================================#
                 elif text.lower() == 'speed':
                     start = time.time()
-                    line.sendMessage(to, "ความเร็ว แมวเป้ Bot Self...")
+                    line.sendMessage(to, "ความเร็ว Bot Self...")
                     elapsed_time = time.time() - start
                     line.sendMessage(msg.to, "[ %s ต่อวินาที ] [ " % (elapsed_time) + str(int(round((time.time() - start) * 1000)))+" ms ]")
                 elif text.lower() == 'sp':
                     start = time.time()
-                    line.sendMessage(to, "ความเร็ว แมวเป้ Bot Self...")
+                    line.sendMessage(to, "ความเร็ว Bot Self...")
                     elapsed_time = time.time() - start
                     line.sendMessage(msg.to, "[ %s ต่อวินาที ] [ " % (elapsed_time) + str(int(round((time.time() - start) * 1000)))+" ms ]")
                 elif text.lower() == 'รีบอท':
@@ -747,14 +747,14 @@ def lineBot(op):
                         grouplist = line.getGroupIdsJoined()
                         contactlist = line.getAllContactIds()
                         blockedlist = line.getBlockedContactIds()
-                        ret_ = "╔══[ 🔯แมวเป้ Bot Self🔯 ]"
+                        ret_ = "╔══[ 🔯Bot Self🔯 ]"
                         ret_ += "\n╠ ➠ ชื่อ ═ {}".format(contact.displayName)
                         ret_ += "\n╠ ➠ กลุ่ม ═ {}".format(str(len(grouplist)))
                         ret_ += "\n╠ ➠ เพื่อน ═ {}".format(str(len(contactlist)))
                         ret_ += "\n╠ ➠ บล็อค ═ {}".format(str(len(blockedlist)))
                         ret_ += "\n╠══[ Status ] \n═ {}".format(contact.statusMessage)
                         ret_ += "\n╠ ➠ ผู้สร้าง ═ {}".format(creator.displayName)
-                        ret_ += "\n╚══[ 🔯แมวเป้ Bot Self🔯 ]"
+                        ret_ += "\n╚══[ 🔯Bot Self🔯 ]"
                         line.sendContact(to, owner)
                         line.sendMessage(to, str(ret_))
                     except Exception as e:
@@ -804,12 +804,12 @@ def lineBot(op):
                         line.sendMessage(to,"ยกเลิกค้างเชิญแล้ว" )           
 #===========
                 elif "สปีด" == msg.text.lower():
-                    line.sendMessage(to,"ความเร็วของ แมวเป้ BotSelf...\n███▒39%\n██████▒69%\n██████████▒99%\n0.0000000000000000 second")
+                    line.sendMessage(to,"ความเร็วของ BotSelf...\n███▒39%\n██████▒69%\n██████████▒99%\n0.0000000000000000 second")
                     line.sendMessage(to,"0.1000000000000000 second")  
                     line.sendMessage(to,"(😁😁")
 #===========
                 elif "เทส" == msg.text.lower():
-                    line.sendMessage(to,"🔯 บัหหรรมน้อย🔯")
+                    line.sendMessage(to,"🔯กำลังเทส🔯")
                     line.sendMessage(to,"LOADING:▒...0%")  
                     line.sendMessage(to,"█▒... 10.0%")       
                     line.sendMessage(to,"██▒... 20.0%")
@@ -821,7 +821,7 @@ def lineBot(op):
                     line.sendMessage(to,"████████▒... 80.0%")
                     line.sendMessage(to,"█████████▒... 90.0%")
                     line.sendMessage(to,"███████████..100.0%")                    
-                    line.sendMessage(to,"🔱แมวเป้ BotSelf ยังอยู่ครับ🔱")       
+                    line.sendMessage(to,"🔱BotSelf ยังอยู่ทำงานครับ🔱")       
 #==============================================================================#
                 elif "n" == msg.text.lower():
                     msg.contentType = 13
@@ -894,7 +894,7 @@ def lineBot(op):
                         else: ret_ += "\n╠ ➠ป้องกันสมาชิกปิด ✘ "
                         if RfuProtect["Protectjoin"] == True: ret_ += "\n╠ ➠ป้องกันคนนอกเข้ากลุ่ม ✔"
                         else: ret_ += "\n╠ ➠ป้องกันคนนนอกเข้ากลุ่ม ✘ "						
-                        ret_ += "\n╚════[ 🔯แมวเป้ 🔯]═════┛"
+                        ret_ += "\n╚════[ 🔯Bot self🔯]═════┛"
                         line.sendMessage(to, str(ret_))
                     except Exception as e:
                         line.sendMessage(msg.to, str(e))
@@ -1382,7 +1382,7 @@ def lineBot(op):
                     ret_ += "\n╠ ➠จำนวนค้างเชิญ : {}".format(gPending)
                     ret_ += "\n╠ ➠ลิ้งของกลุ่ม : {}".format(gQr)
                     ret_ += "\n╠ ➠ลิ้งกลุ่ม : {}".format(gTicket)
-                    ret_ += "\n╚══[🔯แมวเป้ Bot Self🔯]"
+                    ret_ += "\n╚══[🔯Bot Self🔯]"
                     line.sendMessage(to, str(ret_))
                     line.sendImageWithURL(to, path)
                 elif text.lower() == 'สมาชิก':
@@ -1458,8 +1458,8 @@ def lineBot(op):
                             line.sendText(msg.to,"ข้อความสเตตัส:\n"+userData.statusMessage)
                             line.sendText(msg.to,"ไอดีบัญชี: "+userData.mid)
                 
-                elif "By:\n╔══════════════┓\n╠🔯🔱 แมวเป้ 🔱🔯\n╚══════════════┛" in msg.text:
-                    spl = msg.text.split("By:\n╔══════════════┓\n╠🔯🔱แมวเป้🔱🔯 \n╚══════════════┛")
+                elif "By:\n╔══════════════┓\n╠🔯🔱Bot self🔱🔯\n╚══════════════┛" in msg.text:
+                    spl = msg.text.split("By:\n╔══════════════┓\n╠🔯🔱Bot self🔱🔯 \n╚══════════════┛")
                     if spl[len(spl)-1] == "":
                         line.sendText(msg.to,"กดที่นี่เพื่อเขย่าข้อความด้านบน:\nline://nv/chatMsg?chatId="+msg.to+"&messageId="+msg.id)
                 elif "รัน @" in msg.text:
@@ -1479,26 +1479,26 @@ def lineBot(op):
                                thisgroup = line.getGroups([msg.to])
                                Mids = [target for contact in thisgroup[0].members]
                                mi_d = Mids[:33]
-                               line.createGroup("เอ็มBot Self",mi_d)
-                               line.sendText(msg.to,"[เอ็มBot Self]")
-                               line.createGroup("เอ็มBot Self",mi_d)
-                               line.sendText(msg.to,"[เอ็มBot Self]")
-                               line.createGroup("เอ็มBot Self",mi_d)
-                               line.sendText(msg.to,"[เอ็มBot Self]")
-                               line.createGroup("เอ็มBot Self",mi_d)
-                               line.sendText(msg.to,"[เอ็มBot Self]")
-                               line.createGroup("เอ็มBot Self",mi_d)
-                               line.sendText(msg.to,"[เอ็มBot Self]")
-                               line.createGroup("เอ็มBot Self",mi_d)
-                               line.sendText(msg.to,"[เอ็มBot Self]")
-                               line.createGroup("เอ็มBot Self",mi_d)
-                               line.sendText(msg.to,"[เอ็มBot Self]")
-                               line.createGroup("เอ็มBot Self",mi_d)
-                               line.sendText(msg.to,"[เอ็มBot Self]")
-                               line.createGroup("เอ็มBot Self",mi_d)
-                               line.sendText(msg.to,"[เอ็มBot Self]")
-                               line.createGroup("เอ็มBot Self",mi_d)
-                               line.sendText(msg.to,"[เอ็มBot Self]")
+                               line.createGroup("Bot Self",mi_d)
+                               line.sendText(msg.to,"[Bot Self]")
+                               line.createGroup("Bot Self",mi_d)
+                               line.sendText(msg.to,"[Bot Self]")
+                               line.createGroup("Bot Self",mi_d)
+                               line.sendText(msg.to,"[Bot Self]")
+                               line.createGroup("Bot Self",mi_d)
+                               line.sendText(msg.to,"[Bot Self]")
+                               line.createGroup("Bot Self",mi_d)
+                               line.sendText(msg.to,"[Bot Self]")
+                               line.createGroup("Bot Self",mi_d)
+                               line.sendText(msg.to,"[Bot Self]")
+                               line.createGroup("Bot Self",mi_d)
+                               line.sendText(msg.to,"[Bot Self]")
+                               line.createGroup("Bot Self",mi_d)
+                               line.sendText(msg.to,"[Bot Self]")
+                               line.createGroup("Bot Self",mi_d)
+                               line.sendText(msg.to,"[Bot Self]")
+                               line.createGroup("Bot Self",mi_d)
+                               line.sendText(msg.to,"[Bot Self]")
                                line.sendText(msg.to,"➠ทำการรัน สำเร็จ")
                             except:
                                 pass
@@ -1509,126 +1509,126 @@ def lineBot(op):
                     gs = line.getGroup(msg.to)
                     for g in gs.members:
                         if _nametarget == g.displayName:
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")            
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")               	
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")            
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self")
-                           line.sendText(g.mid,"เอ็มBot Self") 
-                           line.sendText(g.mid,"เอ็มBot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")            
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")               	
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")            
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self")
+                           line.sendText(g.mid,"Bot Self") 
+                           line.sendText(g.mid,"Bot Self")
                            line.sendText(msg.to, "➠ทำการรันแชท สำเร็จ")
                            print (" Spammed !")
                 elif "รัน: " in msg.text.lower():
                         key = msg.text[-33:]
                         line.findAndAddContactsByMid(key)                   
                         contact = cl.getContact(key)
-                        line.createGroup("🔱เอ็มBot Self🔱",[key])
+                        line.createGroup("🔱Bot Self🔱",[key])
                         line.sendText(msg,to,"➠ทำการรัน สำเร็จ")
                 elif "ไม่รับเชิญ " in msg.text.lower():
                     spl = re.split("ไม่รับเชิญ ",msg.text,flags=re.IGNORECASE)
@@ -3041,7 +3041,7 @@ def lineBot(op):
                         line.sendImageWithURL(i, bc)
                 elif "ส่งเสียงกลุ่ม " in msg.text:
                     bctxt = msg.text.replace("ส่งเสียงกลุ่ม ", "")
-                    bc = ("เอ็มบอทเซล")
+                    bc = ("บอทเซล")
                     cb = (bctxt + bc)
                     tts = gTTS(cb, lang='th', slow=False)
                     tts.save('tts.mp3')
@@ -3051,7 +3051,7 @@ def lineBot(op):
 
                 elif "ส่งเสียงแชท " in msg.text:
                     bctxt = msg.text.replace("ส่งเสียงแชท ", "")
-                    bc = ("เอ็มบอทเซล")
+                    bc = ("บอทเซล")
                     cb = (bctxt + bc)
                     tts = gTTS(cb, lang='th', slow=False)
                     tts.save('tts.mp3')
@@ -3071,7 +3071,7 @@ def lineBot(op):
                         if hr == day[i]: hasil = hari[i]
                     for k in range(0, len(bulan)):
                         if bln == str(k): bln = bulan[k-1]
-                    readTime = "🔯🔱แมวเป้🔱🔯\n\n🌿🌸🍃🌸🍃🌸🍃🌸🍃🌸🍃🌸🌿" + "\n\n🍁" + hasil + "\n🍁 วันที่ " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y')  + "\n🕛 เวลา : [ " + timeNow.strftime('%H:%M:%S') + " ]" + "\n🌿🌸🍃🌸🍃🌸🍃🌸🍃🌸🍃🌸🌿" + "\n\nBy.แมวเป้"
+                    readTime = "🔯🔱Bot self🔱🔯\n\n🌿🌸🍃🌸🍃🌸🍃🌸🍃🌸🍃🌸🌿" + "\n\n🍁" + hasil + "\n🍁 วันที่ " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y')  + "\n🕛 เวลา : [ " + timeNow.strftime('%H:%M:%S') + " ]" + "\n🌿🌸🍃🌸🍃🌸🍃🌸🍃🌸🍃🌸🌿" + "\n\nBy.แมวเป้"
                     line.sendMessage(msg.to, readTime)
 
                 elif "screenshotwebsite " in msg.text.lower():
@@ -3120,7 +3120,7 @@ def lineBot(op):
                         web.headers["User-Agent"] = random.choice(settings["userAgent"])
                         r = web.get("https://www.youtube.com/results", params = params)
                         soup = BeautifulSoup(r.content, "html.parser")
-                        ret_ = "╔══[ ผลการค้นหา🔱แมวเป้🔱]"
+                        ret_ = "╔══[ ผลการค้นหา🔱Bot self🔱]"
                         datas = []
                         for data in soup.select(".yt-lockup-title > a[title]"):
                             if "&lists" not in data["href"]:
@@ -3139,7 +3139,7 @@ def lineBot(op):
                         web.headers["User-Agent"] = random.choice(settings["userAgent"])
                         r = web.get("https://www.google.com/search?q=", params = params)
                         soup = BeautifulSoup(r.content, "html.parser")
-                        ret_ = "╔══[ ผลการค้นหา🔰แมวเป้🔱]"
+                        ret_ = "╔══[ ผลการค้นหา🔰Bot self🔱]"
                         datas = []
                         for data in soup.select(".yt-lockup-title > a[title]"):
                             if "&lists" not in data["href"]:
@@ -3158,7 +3158,7 @@ def lineBot(op):
                         web.headers["User-Agent"] = random.choice(settings["userAgent"])
                         r = web.get("https://www.youtube.com/results", params = params)
                         soup = BeautifulSoup(r.content, "html.parser")
-                        ret_ = "╔══[ ผลการค้นหา🔱แมวเป้🔱]"
+                        ret_ = "╔══[ ผลการค้นหา🔱Bot self🔱]"
                         datas = []
                         for data in soup.select(".yt-lockup-title > a[title]"):
                             if "&lists" not in data["href"]:
@@ -3177,7 +3177,7 @@ def lineBot(op):
                         web.headers["User-Agent"] = random.choice(settings["userAgent"])
                         r = web.get("https://www.youtube.com/results", params = params)
                         soup = BeautifulSoup(r.content, "html.parser")
-                        ret_ = "╔══[ ผลการค้นหาเอ็มบอท ]"
+                        ret_ = "╔══[ ผลการค้นหา Bot self]"
                         datas = []
                         for data in soup.select(".yt-lockup-title > a[title]"):
                             if "&lists" not in data["href"]:
@@ -3306,7 +3306,7 @@ def lineBot(op):
                     gruplist = line.getAllContactIds()
                     kontak = line.getContacts(gruplist)
                     num=1
-                    msgs="เอ็ม BotSelf"
+                    msgs="BotSelf"
                     for ids in kontak:
                         msgs+="\n[%i] %s" % (num, ids.mid)
                         num=(num+1)
@@ -3368,7 +3368,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "➠ตั้งข้อความเรืยบร้อย")
                      else:
                          settings["message"] = spl
-                         line.sendMessage(msg.to, "🔱เอ็ม Bot Self🔱\nตั้งข้อความเมื่อมีคนแอด\n\n{}".format(str(spl)))
+                         line.sendMessage(msg.to, "🔱Bot Self🔱\nตั้งข้อความเมื่อมีคนแอด\n\n{}".format(str(spl)))
                          
                 elif 'คอมเม้น: ' in msg.text:
                   if msg._from in admin:
@@ -3377,7 +3377,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "➠ตั้งข้อความเรืยบร้อย")
                      else:
                          settings["comment"] = spl
-                         line.sendMessage(msg.to, "🔱เอ็ม Bot Self🔱\nตั้งข้อความคอมเม้นแล้ว \n\n{}".format(str(spl))) 
+                         line.sendMessage(msg.to, "🔱Bot Self🔱\nตั้งข้อความคอมเม้นแล้ว \n\n{}".format(str(spl))) 
                     
                 elif 'ตั้งแทค: ' in msg.text:
                   if msg._from in admin:
@@ -3386,7 +3386,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "➠ตั้งข้อความเรืยบร้อย")
                      else:
                          settings["Respontag"] = spl
-                         line.sendMessage(msg.to, "🔱เอ็ม Bot Self🔱\nตั้งข้อความตอบแทคแล้ว\n\n{}".format(str(spl)))
+                         line.sendMessage(msg.to, "🔱Bot Self🔱\nตั้งข้อความตอบแทคแล้ว\n\n{}".format(str(spl)))
                          
                 elif '.ทักเตะ: ' in msg.text:
                   if msg._from in admin:
@@ -3395,7 +3395,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "➠ตั้งข้อความเมื่อมีคนลบสมาชิดเรียบร้อย")
                      else:
                           settings["kick"] = spl
-                          line.sendMessage(msg.to, "🔱เอ็ม Bot Self🔱\nตั้งค่าข้อความเมื่อมีคนลบสมาชิกในกลุ่มแล้ว\nดังนี้👇\n\n👉{}".format(str(spl)))
+                          line.sendMessage(msg.to, "🔱Bot Self🔱\nตั้งค่าข้อความเมื่อมีคนลบสมาชิกในกลุ่มแล้ว\nดังนี้👇\n\n👉{}".format(str(spl)))
 
                 elif 'ตั้งออก: ' in msg.text:
                   if msg._from in admin:
@@ -3404,7 +3404,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "➠ตั้งข้อความเมื่อมีคนออกเรียบร้อย")
                      else:
                           settings["bye"] = spl
-                          line.sendMessage(msg.to, "🔯เอ็ม Bot Self🔯\nตั้งค่าข้อความเมื่อมีคนออกจากกลุ่มแล้ว\n\n{}".format(str(spl)))
+                          line.sendMessage(msg.to, "🔯Bot Self🔯\nตั้งค่าข้อความเมื่อมีคนออกจากกลุ่มแล้ว\n\n{}".format(str(spl)))
 
                 elif 'ตั้งเข้า: ' in msg.text:
                   if msg._from in admin:
@@ -3413,7 +3413,7 @@ def lineBot(op):
                          line.sendMessage(msg.to, "➠ตั้งข้อความเมื่อมีคนเข้าเรียบร้อยแล้ว")
                      else:
                           settings["welcome"] = spl
-                          line.sendMessage(msg.to, "🔱เอ็ม Bot Self🔱\nตั้งค่าข้อความเมื่อมีคนเข้ากลุ่มแล้ว\n\n{}".format(str(spl)))
+                          line.sendMessage(msg.to, "🔱Bot Self🔱\nตั้งค่าข้อความเมื่อมีคนเข้ากลุ่มแล้ว\n\n{}".format(str(spl)))
 
                 elif msg.text.lower().startswith("ภาพ "):
                     sep = msg.text.split(" ")
@@ -4048,7 +4048,7 @@ def lineBot(op):
                         ret_ += "\n สเตตัส : {}".format(str(contact.statusMessage))
                         ret_ += "\n รูปโปรไฟล : http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus))
                         ret_ += "\n  รูปปก : {}".format(str(cover))
-                        ret_ += "\n🔱By.เอ็ม Bot Self🔱"
+                        ret_ += "\n🔱By.Bot Self🔱"
                         line.sendMessage(to, str(ret_))
                     except:
                         line.sendMessage(to, "เกิดข้อผิดพลาด")
@@ -4207,7 +4207,7 @@ def lineBot(op):
                     line.sendMessage(msg.to, str(settings["comment"]))
             if settings ["Api"] == True:
                 if msg.text in ["55","555","5555","55555","55+","555+","5555+","ขำ","ขำๆ"]:
-                    line.sendText(msg.to,"เอ็มว่าไปหาหมอบ้างนะ อิอิ😝😝")
+                    line.sendText(msg.to,"เราว่าไปหาหมอบ้างนะ อิอิ😝😝")
             if settings ["Api"] == True:
                 if msg.text in [".ประกาศ","โฆษณา","ประชาสัมพัน","ประกาศ"]:
                 	line.sendMessage(msg.to, str(settings["comment"]))
@@ -4307,7 +4307,7 @@ def lineBot(op):
         	             if settings['kickMention'] == True:
         		             contact = line.getContact(msg._from)
         		             cName = contact.displayName
-        		             balas = ["➠เนื่องจากตอนนี้เอ็มเปิดระบบเตะคนแทคไว้ " + "\n👉" + cName + "\n🙏ต้องขออภัยด้วยจริงๆ🙏Bye!!!"]
+        		             balas = ["➠เนื่องจากตอนนี้เปิดระบบเตะคนแทคไว้ " + "\n👉" + cName + "\n🙏ต้องขออภัยด้วยจริงๆ🙏Bye!!!"]
         		             ret_ = "" + random.choice(balas)                     
         		             name = re.findall(r'@(\w+)', msg.text)
         		             mention = ast.literal_eval(msg.contentMetadata["MENTION"])
